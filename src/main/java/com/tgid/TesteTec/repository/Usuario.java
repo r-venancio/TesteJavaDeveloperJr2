@@ -1,4 +1,4 @@
-package com.tgid.TesteTec.model;
+package com.tgid.TesteTec.repository;
 
 public interface Usuario {
 

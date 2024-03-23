@@ -1,5 +1,7 @@
 package com.tgid.TesteTec.model;
 
+import com.tgid.TesteTec.repository.Usuario;
+
 public class Cliente implements Usuario {
     private String cpf;
 
