@@ -5,11 +5,11 @@ import com.tgid.TesteTec.repository.Usuario;
 public class Empresa implements Usuario {
     private String cnpj;
     private double saldo;
-    private double taxa;
-
+    private static final double TaxaFixa = 0.05;
+   
     public Empresa(String cnpj, double taxa) {
         this.cnpj = cnpj;
-        this.taxa = taxa;
+   
     }
 
     public String getCnpj() {
@@ -29,7 +29,7 @@ public class Empresa implements Usuario {
     }
 
     public double calcularTaxa(double valor) {
-        return valor * taxa;
+    	return valor * TaxaFixa;
     }
 
     @Override
